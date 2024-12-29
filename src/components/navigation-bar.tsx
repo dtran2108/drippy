@@ -2,6 +2,7 @@ import Link from 'next/link';
 import DrippyLogo from './drippy-logo';
 import { MoveUpRight } from 'lucide-react';
 import { Button } from './ui/button';
+import DarkModeBtn from './darkmode-btn';
 
 export default function NavigationBar() {
   return (
@@ -19,6 +20,7 @@ export default function NavigationBar() {
         </div>
       </div>
       <div className="flex items-center space-x-4">
+        <DarkModeBtn />
         <Button variant="outline" className="font-bold p-5">
           Login
         </Button>
