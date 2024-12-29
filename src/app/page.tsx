@@ -7,11 +7,13 @@ import WorkflowSection from '@/components/workflow-section';
 import { Badge } from '@/components/ui/badge';
 import ClothesSection from '@/components/clothes-section';
 import TestimonialSection from '@/components/testimonial-section';
+import FAQSection from '@/components/faq-section';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
     <main className="py-4 px-8">
-      <section className="grid grid-cols-2 gap-4 my-16">
+      <section className="grid grid-cols-2 gap-16 my-16">
         <div>
           <h1 className="text-5xl font-bold leading-relaxed">
             Creating your next <br />
@@ -202,6 +204,55 @@ export default function Home() {
       </section>
 
       <TestimonialSection />
+
+      <FAQSection />
+
+      <section className="mx-4 flex-col rounded-lg bg-black-900 p-4 flex items-center justify-center">
+        <h1 className="text-5xl font-bold leading-relaxed text-center">
+          Start creating <span className="italic font-normal">today.</span>
+        </h1>
+        <h2 className="text-gray-500 text-lg mt-4 text-center">
+          Generate designs in seconds, not hours.
+        </h2>
+        <Button className="flex items-center space-x-1 mt-4 p-5">
+          <span className="font-bold">Get started now</span>
+          <span> - It&apos;s FREE</span>
+          <span>
+            <MoveRight />
+          </span>
+        </Button>
+        <h2 className="text-gray-500 text-lg mt-8 text-center">
+          And join our communities:
+        </h2>
+        <div className="flex items-center space-x-4 mt-4">
+          <Image
+            src={'/logos/discord-logo.svg'}
+            width={30}
+            height={30}
+            alt="discord-logo"
+          />
+          <Image
+            src={'/logos/reddit-logo.svg'}
+            width={30}
+            height={30}
+            alt="reddit-logo"
+          />
+          <Image
+            src={'/logos/instagram-logo.svg'}
+            width={30}
+            height={30}
+            alt="instagram-logo"
+          />
+          <Image
+            src={'/logos/x-logo.svg'}
+            width={30}
+            height={30}
+            alt="x-logo"
+          />
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
