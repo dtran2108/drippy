@@ -12,6 +12,7 @@ export default {
       colors: {
         black: {
           900: '#191A1D',
+          800: '#1F2023',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
