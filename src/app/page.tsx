@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-4xl font-bold mb-8">
           They <span className="italic font-normal">trust</span> us
         </h2>
         <div className="flex items-center justify-center space-x-4 mt-4">
@@ -88,6 +88,25 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="my-24 flex flex-col items-center justify-center">
+        <h2 className="text-4xl font-bold text-center leading-relaxed">
+          A <span className="italic font-normal">much</span> better way to
+          design,
+          <br /> prototype and produce your products.
+        </h2>
+        <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
+          Everything you need to get you from concept to production. <br />A
+          platform made for entrepreneurs, by entrepreneurs.
+        </h3>
+        <Image
+          className="mt-8"
+          src="/design-platform.png"
+          alt="design-platform"
+          width={1200}
+          height={800}
+        />
       </section>
     </main>
   );
