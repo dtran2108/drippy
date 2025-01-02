@@ -39,7 +39,10 @@ export default function Home() {
           </h2>
           <div className="flex items-center space-x-4 mt-4">
             <Avatar>
-              <AvatarImage src="/avatar/Salalcrossley.png" alt="@Salalcrossley" />
+              <AvatarImage
+                src="/avatar/Salalcrossley.png"
+                alt="@Salalcrossley"
+              />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div>
@@ -104,31 +107,32 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-16">
             <div>
               <h3 className="mb-4 text-xl font-semibold">Speed</h3>
-              <p className="leading-relaxed">
-                Accelerate time-to-market by 6.5X with real-time iteration for
-                faster, smarter decision-making.
+              <p className="leading-relaxed text-lg">
+                What took 6 months now takes just 4 weeks. Accelerate
+                time-to-market by 6.5X with real-time iteration for faster,
+                smarter decision-making.
               </p>
             </div>
             <div>
               <h3 className="mb-4 text-xl font-semibold">Cost</h3>
-              <p className="leading-relaxed">
-                Cut your cost by 50% by eliminating the need for the
-                never-ending samplingloop.
+              <p className="leading-relaxed text-lg">
+                Save up to $10,000 per collection. Cut your cost by 50% by
+                eliminating the need for the never-ending samplingloop.
               </p>
             </div>
           </div>
-          <hr className="border-t-1 border-dashed border-gray-700 my-6"></hr>
+          <hr className="border-t-1 custom-dashed-line border-[#2A2C31] my-6"></hr>
           <div className="grid grid-cols-2 gap-16">
             <div>
               <h3 className="mb-4 text-xl font-semibold">Sustainability</h3>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-lg">
                 Slash material waste, energy use, and overall pre and
                 post-production waste by 60%.
               </p>
             </div>
             <div>
               <h3 className="mb-4 text-xl font-semibold">Collaboration</h3>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-lg">
                 Enables seamless and real-time collaboration across teams to
                 reduce errors by up to 90%.
               </p>

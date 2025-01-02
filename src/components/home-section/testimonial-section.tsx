@@ -5,22 +5,22 @@ const testimonials = [
     text: 'I am currently teaching a class of 85 fashion students in Rome, from over 20 countries. I noticed the class in general is terrified to work with 3D. It is almost like a mental block for many. When I found Drippy, it was like a lightbulb turning on.',
     name: 'Lecturer at Sapienza.',
     username: '@julianabez',
-    avatarSrc: 'https://github.com/shadcn.png',
-    avatarAlt: '@shadcn',
+    avatarSrc: '/avatar/julianabez.png',
+    avatarAlt: 'julianabez',
   },
   {
     text: "I used to struggle with 3D design software that felt like it took a lifetime to learn. Drippy made it so easy to bring my ideas to life—I can finally design without feeling overwhelmed. It's exactly what I needed.",
     name: 'Freelance designer.',
     username: '@Liamrodriguez',
-    avatarSrc: 'https://github.com/shadcn.png',
-    avatarAlt: '@shadcn',
+    avatarSrc: '/avatar/Liamrodriguez.png',
+    avatarAlt: 'Liamrodriguez',
   },
   {
     text: "I'm still learning, but Drippy's 3D tools have made a huge difference in my design projects. I can visualize everything instantly and make changes on the spot, which has really helped me grow as a designer. ",
     name: 'Fashion students.',
     username: '@Hannahbailey',
-    avatarSrc: 'https://github.com/shadcn.png',
-    avatarAlt: '@shadcn',
+    avatarSrc: '/avatar/Hannahbailey.png',
+    avatarAlt: 'Hannahbailey',
   },
 ];
 
@@ -40,7 +40,7 @@ function Testimonial({
   avatarAlt,
 }: TestimonialProps) {
   return (
-    <div className="p-6 rounded-lg bg-black-900 border border-black-800">
+    <div className="p-6 rounded-lg bg-black-900 border border-black-800 w-[380px] h-[270px]">
       <p className="text-gray-500">{text}</p>
       <div className="flex items-center space-x-4 mt-4">
         <Avatar>
