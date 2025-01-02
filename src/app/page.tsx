@@ -9,6 +9,7 @@ import Footer from '@/components/footer';
 import TrustSection from '@/components/home-section/trust-section';
 import WorkflowSection from '@/components/home-section/workflow-section';
 import TestimonialSection from '@/components/home-section/testimonial-section';
+import TechnologyBenefitSection from '@/components/home-section/technology-benefit-section';
 
 export default function Home() {
   return (
@@ -83,63 +84,7 @@ export default function Home() {
         <WorkflowSection />
       </section>
 
-      <section className="grid grid-cols-2 gap-16 my-16">
-        <div>
-          <h1 className="text-5xl font-semibold leading-relaxed">
-            Enjoy the full power of
-            <br />
-            <span className="italic font-normal">
-              3D technology
-            </span> —minus <br /> the complexity.
-          </h1>
-          <h2 className="text-gray-500 text-lg mt-4">
-            3D design should be a solution, not a burden.
-          </h2>
-          <Button
-            variant="outline"
-            className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-4"
-          >
-            <span className="text-gray-500">Learn more</span>
-            <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
-          </Button>
-        </div>
-        <div>
-          <div className="grid grid-cols-2 gap-16">
-            <div>
-              <h3 className="mb-4 text-xl font-semibold">Speed</h3>
-              <p className="leading-relaxed text-lg">
-                What took 6 months now takes just 4 weeks. Accelerate
-                time-to-market by 6.5X with real-time iteration for faster,
-                smarter decision-making.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-4 text-xl font-semibold">Cost</h3>
-              <p className="leading-relaxed text-lg">
-                Save up to $10,000 per collection. Cut your cost by 50% by
-                eliminating the need for the never-ending samplingloop.
-              </p>
-            </div>
-          </div>
-          <hr className="border-t-1 custom-dashed-line border-[#2A2C31] my-6"></hr>
-          <div className="grid grid-cols-2 gap-16">
-            <div>
-              <h3 className="mb-4 text-xl font-semibold">Sustainability</h3>
-              <p className="leading-relaxed text-lg">
-                Slash material waste, energy use, and overall pre and
-                post-production waste by 60%.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-4 text-xl font-semibold">Collaboration</h3>
-              <p className="leading-relaxed text-lg">
-                Enables seamless and real-time collaboration across teams to
-                reduce errors by up to 90%.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TechnologyBenefitSection />
 
       <section className="my-24 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-semibold text-center leading-relaxed">
