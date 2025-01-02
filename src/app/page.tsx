@@ -10,6 +10,7 @@ import WorkflowSection from '@/components/home-section/workflow-section';
 import TestimonialSection from '@/components/home-section/testimonial-section';
 import TechnologyBenefitSection from '@/components/home-section/technology-benefit-section';
 import AIExpSection from '@/components/home-section/ai-exp-section';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   return (
@@ -64,7 +65,10 @@ export default function Home() {
           {[2, 3, 4, 5, 6].map((_, i) => (
             <div
               key={i}
-              className="rounded-lg bg-black-900 flex items-center justify-center"
+              className={cn(
+                'rounded-lg bg-black-900 flex items-center justify-center',
+                (i == 0 || i == 3) && 'relative top-4'
+              )}
             >
               <Image
                 src={`/main-dress-${i + 2}.png`}
