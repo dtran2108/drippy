@@ -6,7 +6,7 @@ import DarkModeBtn from './darkmode-btn';
 
 export default function NavigationBar() {
   return (
-    <div className="flex items-center justify-between w-screen py-4 px-8 font-[family-name:var(--font-poppins)]">
+    <div className="fixed bg-background top-0 flex items-center justify-between w-screen py-4 px-8 font-[family-name:var(--font-poppins)]">
       <div className="flex items-center space-x-24">
         <DrippyLogo />
         <div className="text-gray-500 flex items-center space-x-8">

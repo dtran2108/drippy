@@ -12,7 +12,7 @@ import Footer from '@/components/footer';
 
 export default function Home() {
   return (
-    <main className="py-4 px-8">
+    <main className="py-16 px-8">
       <section className="grid grid-cols-2 gap-16 my-16">
         <div>
           <h1 className="text-5xl font-bold leading-relaxed">
