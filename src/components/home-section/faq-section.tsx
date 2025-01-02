@@ -61,7 +61,7 @@ export default function FAQSection() {
               value={`item-${i}`}
               className="border-none my-4 rounded-lg px-4 py-2 bg-black-900"
             >
-              <AccordionTrigger className="text-gray-500 text-xl ">
+              <AccordionTrigger className="text-gray-500 text-lg ">
                 {i + 1}. {q.question}
               </AccordionTrigger>
               <AccordionContent>{q.answer}</AccordionContent>

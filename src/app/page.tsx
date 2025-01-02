@@ -207,7 +207,7 @@ export default function Home() {
 
       <FAQSection />
 
-      <section className="mx-4 flex-col rounded-lg bg-black-900 p-4 flex items-center justify-center">
+      <section className="mx-4 flex-col rounded-lg bg-black-900 p-[25px] flex items-center justify-center">
         <h1 className="text-5xl font-semibold leading-relaxed text-center">
           Start creating <span className="italic font-normal">today.</span>
         </h1>
