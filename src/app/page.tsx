@@ -122,6 +122,7 @@ export default function Home() {
         </h2>
         <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
           Access the largest library of design templates and downloadable
+          <br />
           assets, including sewing patterns, 3D files, and more
         </h3>
         <ClothesSection />

@@ -15,6 +15,7 @@ export default {
           '900': '#191A1D',
         },
         grey: '#2A2C31',
+        suvaGrey: '#99999A',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

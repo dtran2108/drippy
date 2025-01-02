@@ -42,7 +42,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="grid grid-cols-2 gap-16 my-16">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-16 my-16">
       <div>
         <h1 className="text-5xl font-semibold leading-relaxed">
           Here&apos;s everything

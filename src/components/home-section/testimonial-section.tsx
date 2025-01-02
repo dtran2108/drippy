@@ -67,7 +67,7 @@ export default function TestimonialSection() {
         Fashion entrepreneurs around the worlds love Drippy for <br /> its
         flexibility and ease of use.
       </h3>
-      <div className="grid grid-cols-3 gap-8 px-24">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-24">
         {testimonials.map((testimonial, index) => (
           <Testimonial key={index} {...testimonial} />
         ))}
