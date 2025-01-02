@@ -1,0 +1,57 @@
+.toggle {
+  position: relative;
+  box-sizing: border-box;
+}
+.toggle input[type='checkbox'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.toggle label:before {
+  content: '';
+  width: 70px;
+  height: 40px;
+  background: #121316;
+  box-shadow: inset -30px 0 0 #1f2023;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: 0.25s ease-in;
+}
+
+.toggle label:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background: #1f2023;
+  background: url('/icons/moon.svg') no-repeat center center;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
+}
+
+.toggle input[type='checkbox']:checked + label:before {
+  box-shadow: inset 30px 0 0 #1f2023;
+  background: #121316;
+}
+.toggle input[type='checkbox']:checked + label:after {
+  background: url('/icons/sun.svg') no-repeat center center;
+  background-size: cover;
+  left: 40px;
+  top: 10px;
+}
