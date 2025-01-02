@@ -52,10 +52,31 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-2">
-          {[1, 2, 3, 4, 5, 6].map((_, i) => (
-            <div key={i} className="rounded-lg bg-black-900"></div>
+        <div className="grid grid-cols-3 gap-2 relative">
+          <div className="rounded-lg bg-black-900 flex items-center justify-center">
+            <Image
+              src={`/main-dress-1.png`}
+              width={500}
+              height={200}
+              alt="mockup"
+            />
+          </div>
+          {[2, 3, 4, 5, 6].map((_, i) => (
+            <div
+              key={i}
+              className="rounded-lg bg-black-900 flex items-center justify-center"
+            >
+              <Image
+                src={`/main-dress-${i + 2}.png`}
+                width={200}
+                height={200}
+                alt="mockup"
+              />
+            </div>
           ))}
+          <div className="absolute bottom-0 h-[150px] bg-[#000] w-full opacity-60 blur-2xl">
+            &nbsp;
+          </div>
         </div>
       </section>
 
