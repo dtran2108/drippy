@@ -32,7 +32,7 @@ export default function Home() {
               <MoveRight />
             </span>
           </Button>
-          <hr className="border-t-1 border-dashed border-gray-700 my-6"></hr>
+          <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
           <h2 className="text-gray-500 text-lg mt-4">
             “I&apos;d like to say that I&apos;ve done countless research and I
             <br /> believe that you are onto something revolutionary!”

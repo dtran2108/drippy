@@ -6,6 +6,17 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
+@layer utilities {
+  .custom-dashed-line {
+    border-top: 1px solid #2A2C31;
+    border-image: repeating-linear-gradient(
+      to right,
+      #2A2C31 0 10px,
+      transparent 10px 20px
+    ) 1;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
