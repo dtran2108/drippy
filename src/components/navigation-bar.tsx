@@ -15,7 +15,7 @@ export default function NavigationBar() {
           <Link href="/">Pricing</Link>
           <Link href="/" className="flex items-center justify-center space-x-4">
             ITF
-            <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
+            <MoveUpRight strokeWidth={1.5} className="ml-1 text-gray-500 w-[10px] h-[10px]" />
           </Link>
         </div>
       </div>

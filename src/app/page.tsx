@@ -22,8 +22,8 @@ export default function Home() {
             <span className="italic font-normal">never been</span> easier.
           </h1>
           <h2 className="text-gray-500 text-lg mt-4">
-            Accelerate and simplify your process with our AI-powered 3D <br />
-            fashion design platform that works on your browser.
+            Join thousands of fashion entrepreneurs who&apos;ve cut their design
+            time <br /> by 85% while reducing costs
           </h2>
           <Button className="flex items-center space-x-1 mt-4 p-5">
             <span className="font-bold">Get started now</span>
@@ -39,7 +39,7 @@ export default function Home() {
           </h2>
           <div className="flex items-center space-x-4 mt-4">
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+              <AvatarImage src="/avatar/Salalcrossley.png" alt="@Salalcrossley" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div>
