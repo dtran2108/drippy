@@ -1,10 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-bold p-8 h-6 rounded-full text-xl';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold p-8 h-6 rounded-full text-xl';
 
   const workflows = [
     {
@@ -55,7 +55,7 @@ export default function WorkflowSection() {
             {workflow.description}
             <Button
               variant="outline"
-              className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+              className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
             >
               <span className="text-gray-500">Explore 3D builder</span>
               <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />

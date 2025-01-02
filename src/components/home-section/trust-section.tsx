@@ -6,12 +6,12 @@ const TrustSection = () => {
     { name: 'beyond-form', width: 100, height: 50 },
     { name: 'creative-valley', width: 100, height: 50 },
     { name: 'global-startups', width: 100, height: 50 },
-    { name: 'ifa-paris', width: 100, height: 50 },
+    { name: 'ifa-paris', width: 130, height: 50 },
   ];
 
   return (
     <section className="my-24 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold mb-8">
+      <h2 className="text-4xl font-semibold mb-8">
         They <span className="italic font-normal">trust</span> us
       </h2>
       <div className="flex items-center justify-center space-x-4 mt-4">
@@ -22,7 +22,7 @@ const TrustSection = () => {
             width={50}
             height={50}
           />
-          <span className="text-sm font-bold">
+          <span className="text-sm font-semibold">
             The French
             <br /> ministry of
             <br /> economic.

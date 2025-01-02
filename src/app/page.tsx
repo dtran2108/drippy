@@ -2,20 +2,20 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { MoveRight, MoveUpRight } from 'lucide-react';
 import Image from 'next/image';
-import TrustSection from '@/components/trust-section';
-import WorkflowSection from '@/components/workflow-section';
 import { Badge } from '@/components/ui/badge';
-import ClothesSection from '@/components/clothes-section';
-import TestimonialSection from '@/components/testimonial-section';
-import FAQSection from '@/components/faq-section';
+import ClothesSection from '@/components/home-section/clothes-section';
+import FAQSection from '@/components/home-section/faq-section';
 import Footer from '@/components/footer';
+import TrustSection from '@/components/home-section/trust-section';
+import WorkflowSection from '@/components/home-section/workflow-section';
+import TestimonialSection from '@/components/home-section/testimonial-section';
 
 export default function Home() {
   return (
     <main className="py-16 px-8">
       <section className="grid grid-cols-2 gap-16 my-16">
         <div>
-          <h1 className="text-5xl font-bold leading-relaxed">
+          <h1 className="text-5xl font-semibold leading-relaxed">
             Creating your next <br />
             collection has
             <br />
@@ -26,7 +26,7 @@ export default function Home() {
             time <br /> by 85% while reducing costs
           </h2>
           <Button className="flex items-center space-x-1 mt-4 p-5">
-            <span className="font-bold">Get started now</span>
+            <span className="font-semibold">Get started now</span>
             <span> - It&apos;s FREE</span>
             <span>
               <MoveRight />
@@ -43,7 +43,7 @@ export default function Home() {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div>
-              <p className="font-bold">Founder at Vintage Indentity</p>
+              <p className="font-semibold">Founder at Vintage Indentity</p>
               <p className="text-gray-500">@Salalcrossley</p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
       <TrustSection />
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center leading-relaxed">
+        <h2 className="text-4xl font-semibold text-center leading-relaxed">
           A <span className="italic font-normal">much</span> better way to
           design,
           <br /> prototype and produce your products.
@@ -82,7 +82,7 @@ export default function Home() {
 
       <section className="grid grid-cols-2 gap-16 my-16">
         <div>
-          <h1 className="text-5xl font-bold leading-relaxed">
+          <h1 className="text-5xl font-semibold leading-relaxed">
             Enjoy the full power of
             <br />
             <span className="italic font-normal">
@@ -94,7 +94,7 @@ export default function Home() {
           </h2>
           <Button
             variant="outline"
-            className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-4"
+            className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-4"
           >
             <span className="text-gray-500">Learn more</span>
             <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
@@ -103,14 +103,14 @@ export default function Home() {
         <div>
           <div className="grid grid-cols-2 gap-16">
             <div>
-              <h3 className="mb-4 text-xl font-bold">Speed</h3>
+              <h3 className="mb-4 text-xl font-semibold">Speed</h3>
               <p className="leading-relaxed">
                 Accelerate time-to-market by 6.5X with real-time iteration for
                 faster, smarter decision-making.
               </p>
             </div>
             <div>
-              <h3 className="mb-4 text-xl font-bold">Cost</h3>
+              <h3 className="mb-4 text-xl font-semibold">Cost</h3>
               <p className="leading-relaxed">
                 Cut your cost by 50% by eliminating the need for the
                 never-ending samplingloop.
@@ -120,14 +120,14 @@ export default function Home() {
           <hr className="border-t-1 border-dashed border-gray-700 my-6"></hr>
           <div className="grid grid-cols-2 gap-16">
             <div>
-              <h3 className="mb-4 text-xl font-bold">Sustainability</h3>
+              <h3 className="mb-4 text-xl font-semibold">Sustainability</h3>
               <p className="leading-relaxed">
                 Slash material waste, energy use, and overall pre and
                 post-production waste by 60%.
               </p>
             </div>
             <div>
-              <h3 className="mb-4 text-xl font-bold">Collaboration</h3>
+              <h3 className="mb-4 text-xl font-semibold">Collaboration</h3>
               <p className="leading-relaxed">
                 Enables seamless and real-time collaboration across teams to
                 reduce errors by up to 90%.
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center leading-relaxed">
+        <h2 className="text-4xl font-semibold text-center leading-relaxed">
           Enhance <span className="italic font-normal">your experience</span>{' '}
           with AI.
         </h2>
@@ -150,7 +150,7 @@ export default function Home() {
             <div key={i} className="rounded-lg bg-black-900 p-4">
               <div className="rounded-lg bg-black-800 h-[300px] w-full"></div>
               <div>
-                <h3 className="text-lg font-bold mt-4 text-center flex items-center justify-center">
+                <h3 className="text-lg font-semibold mt-4 text-center flex items-center justify-center">
                   Custom-fit patterns{' '}
                   <span className="ml-2">
                     <Badge className="bg-[#B897FD] rounded-full">Beta</Badge>
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center leading-relaxed">
+        <h2 className="text-4xl font-semibold text-center leading-relaxed">
           Create everything you can{' '}
           <span className="italic font-normal">imagine.</span>
         </h2>
@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center leading-relaxed">
+        <h2 className="text-4xl font-semibold text-center leading-relaxed">
           And bring your product to life,{' '}
           <span className="italic font-normal">effortlessly.</span>
         </h2>
@@ -196,7 +196,7 @@ export default function Home() {
         />
         <Button
           variant="outline"
-          className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+          className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
         >
           <span className="text-gray-500">Learn how it works</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
@@ -208,14 +208,14 @@ export default function Home() {
       <FAQSection />
 
       <section className="mx-4 flex-col rounded-lg bg-black-900 p-4 flex items-center justify-center">
-        <h1 className="text-5xl font-bold leading-relaxed text-center">
+        <h1 className="text-5xl font-semibold leading-relaxed text-center">
           Start creating <span className="italic font-normal">today.</span>
         </h1>
         <h2 className="text-gray-500 text-lg mt-4 text-center">
           Generate designs in seconds, not hours.
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5">
-          <span className="font-bold">Get started now</span>
+          <span className="font-semibold">Get started now</span>
           <span> - It&apos;s FREE</span>
           <span>
             <MoveRight />
