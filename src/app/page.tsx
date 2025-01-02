@@ -2,7 +2,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { MoveRight, MoveUpRight } from 'lucide-react';
 import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
 import ClothesSection from '@/components/home-section/clothes-section';
 import FAQSection from '@/components/home-section/faq-section';
 import Footer from '@/components/footer';
@@ -10,6 +9,7 @@ import TrustSection from '@/components/home-section/trust-section';
 import WorkflowSection from '@/components/home-section/workflow-section';
 import TestimonialSection from '@/components/home-section/testimonial-section';
 import TechnologyBenefitSection from '@/components/home-section/technology-benefit-section';
+import AIExpSection from '@/components/home-section/ai-exp-section';
 
 export default function Home() {
   return (
@@ -86,34 +86,7 @@ export default function Home() {
 
       <TechnologyBenefitSection />
 
-      <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold text-center leading-relaxed">
-          Enhance <span className="italic font-normal">your experience</span>{' '}
-          with AI.
-        </h2>
-        <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
-          3D+AI is here to reshape the future of fashion design.
-        </h3>
-        <div className="grid grid-cols-3 gap-4 mt-8">
-          {[1, 2, 3].map((_, i) => (
-            <div key={i} className="rounded-lg bg-black-900 p-4">
-              <div className="rounded-lg bg-black-800 h-[300px] w-full"></div>
-              <div>
-                <h3 className="text-lg font-semibold mt-4 text-center flex items-center justify-center">
-                  Custom-fit patterns{' '}
-                  <span className="ml-2">
-                    <Badge className="bg-[#B897FD] rounded-full">Beta</Badge>
-                  </span>
-                </h3>
-                <p className="mt-4 leading-relaxed text-center">
-                  Generate made-to-measure (MTM) patterns tailored to your
-                  avatar&apos;s exact body measurements.
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <AIExpSection />
 
       <section className="my-24 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-semibold text-center leading-relaxed">
