@@ -4,28 +4,28 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold p-8 h-6 rounded-full text-xl';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-8 h-[50px] rounded-full text-xl';
 
   const workflows = [
     {
       title: 'Design',
       description:
-        'Create stunning 3D designs right in your browser with our intuitive real-time fashion builder — no skills required!',
+        'Create stunning market-ready 3D fashion designs in minutes - no technical skills needed',
     },
     {
       title: 'Collaborate',
       description:
-        'Create stunning 3D designs right in your browser with our intuitive real-time fashion builder — no skills required!',
+        'Share and iterate designs in real-time with your team and manufacturers.',
     },
     {
       title: 'Export',
       description:
-        'Create stunning 3D designs right in your browser with our intuitive real-time fashion builder — no skills required!',
+        'Generate production-ready patterns and files in one click',
     },
     {
       title: 'Produce',
       description:
-        'Create stunning 3D designs right in your browser with our intuitive real-time fashion builder — no skills required!',
+        'Connect with our network of vetted manufacturers to get your sample ready.',
     },
   ];
 
@@ -55,7 +55,7 @@ export default function WorkflowSection() {
             {workflow.description}
             <Button
               variant="outline"
-              className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+              className="font-semibold px-8 h-[50px] flex items-center justify-center space-x-1 rounded-full mt-8"
             >
               <span className="text-gray-500">Explore 3D builder</span>
               <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />

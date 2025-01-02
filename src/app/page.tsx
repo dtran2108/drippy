@@ -76,7 +76,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="my-24 flex flex-col items-center justify-center">
+      <section className="my-[20px] flex flex-col items-center justify-center">
         <WorkflowSection />
       </section>
 
