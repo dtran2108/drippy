@@ -26,7 +26,7 @@ export default function Home() {
             Join thousands of fashion entrepreneurs who&apos;ve cut their design
             time <br /> by 85% while reducing costs
           </h2>
-          <Button className="flex items-center space-x-1 mt-4 p-5">
+          <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
             <span className="font-semibold">Get started now</span>
             <span> - It&apos;s FREE</span>
             <span>
