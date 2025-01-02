@@ -162,14 +162,15 @@ export default function Home() {
         <h2 className="text-gray-500 text-lg mt-4 text-center">
           Generate designs in seconds, not hours.
         </h2>
-        <Button className="flex items-center space-x-1 mt-4 p-5">
+        <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
           <span className="font-semibold">Get started now</span>
           <span> - It&apos;s FREE</span>
           <span>
             <MoveRight />
           </span>
         </Button>
-        <h2 className="text-gray-500 text-lg mt-8 text-center">
+        <div className="border-t-1 custom-dashed-line border-grey my-5 h-[1px] w-[400px]">&nbsp;</div>
+        <h2 className="text-gray-500 text-lg text-center">
           And join our communities:
         </h2>
         <div className="flex items-center space-x-4 mt-4">
