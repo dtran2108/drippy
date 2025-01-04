@@ -3,13 +3,14 @@ import DrippyLogo from './drippy-logo';
 import { MoveUpRight } from 'lucide-react';
 import { Button } from './ui/button';
 import DarkModeBtn from './darkmode-btn';
+import MobileMenu from './mobile-menu';
 
 export default function NavigationBar() {
   return (
     <div className="fixed bg-background top-0 flex items-center justify-between w-screen py-4 px-8 font-[family-name:var(--font-poppins)] z-50">
       <div className="flex items-center space-x-24">
         <DrippyLogo />
-        <div className="text-gray-500 flex items-center space-x-8">
+        <div className="text-gray-500 hidden lg:flex items-center space-x-8">
           <Link href="/">Products</Link>
           <Link href="/">Marketplace</Link>
           <Link href="/">Pricing</Link>
@@ -22,12 +23,17 @@ export default function NavigationBar() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="hidden lg:flex items-center space-x-4">
         <DarkModeBtn />
         <Button variant="outline" className="font-bold p-5 w-[100px] h-[50px]">
           Login
         </Button>
-        <Button className="font-bold p-5 w-[137px] h-[50px]">Get Started</Button>
+        <Button className="font-bold p-5 w-[137px] h-[50px]">
+          Get Started
+        </Button>
+      </div>
+      <div className="flex lg:hidden items-center justify-center">
+        <MobileMenu />
       </div>
     </div>
   );
