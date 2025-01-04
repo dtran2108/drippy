@@ -31,12 +31,12 @@ export default function TechnologyBenefitSection() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 my-16">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 my-16">
       <div>
         <h1 className="text-5xl font-semibold leading-relaxed">
           Enjoy the full power of
           <br className="hidden lg:block" />
-          <span className="italic font-normal">3D technology</span> —minus{' '}
+          <span className="italic font-normal"> 3D technology</span> —minus{' '}
           <br className="hidden lg:block" /> the complexity.
         </h1>
         <h2 className="text-gray-500 text-lg mt-4">
@@ -44,14 +44,14 @@ export default function TechnologyBenefitSection() {
         </h2>
         <Button
           variant="outline"
-          className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-4"
+          className="font-semibold p-5 hidden lg:flex items-center justify-center space-x-1 rounded-full mt-4 "
         >
           <span className="text-gray-500">Learn more</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
         </Button>
       </div>
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {content.slice(0, 2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">
@@ -70,8 +70,8 @@ export default function TechnologyBenefitSection() {
             </div>
           ))}
         </div>
-        <hr className="border-t-1 custom-dashed-line border-[#2A2C31] my-6"></hr>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <hr className="hidden lg:block border-t-1 custom-dashed-line border-[#2A2C31] my-6"></hr>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-8 lg:mt-0">
           {content.slice(2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">
@@ -90,6 +90,15 @@ export default function TechnologyBenefitSection() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="block lg:hidden">
+        <Button
+          variant="outline"
+          className="font-semibold p-5 flex items-center justify-center space-x-1 rounded-full mt-4 "
+        >
+          <span className="text-gray-500">Learn more</span>
+          <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
+        </Button>
       </div>
     </section>
   );

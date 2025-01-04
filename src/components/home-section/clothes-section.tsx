@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function ClothesSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-8 h-[50px] rounded-full text-lg';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
   const workflows = [
     {
@@ -50,7 +50,7 @@ export default function ClothesSection() {
         defaultValue="Dress"
         className="w-full flex flex-col items-center justify-center text-lg mt-[20px]"
       >
-        <TabsList className="bg-bg">
+        <TabsList className="bg-background flex items-center justify-start flex-wrap h-auto space-y-1">
           {workflows.map((workflow, i) => (
             <TabsTrigger
               key={i}

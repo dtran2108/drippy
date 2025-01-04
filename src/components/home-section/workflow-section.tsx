@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-6 lg:px-8 h-[50px] rounded-full text-md lg:text-xl';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-6 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
   const workflows = [
     {
@@ -34,7 +34,7 @@ export default function WorkflowSection() {
         defaultValue="Design"
         className="flex flex-col items-center justify-center text-xl"
       >
-        <TabsList className="bg-background flex flex-wrap">
+        <TabsList className="bg-background">
           {workflows.map((workflow, i) => (
             <TabsTrigger
               key={i}
@@ -46,19 +46,20 @@ export default function WorkflowSection() {
           ))}
         </TabsList>
         {workflows.map((workflow, i) => (
-          <TabsContent
-            key={i}
-            value={workflow.title}
-            className="text-center mt-8 flex flex-col items-center justify-center"
-          >
-            {workflow.description}
-            <Button
-              variant="outline"
-              className="font-semibold px-8 h-[50px] flex items-center justify-center space-x-1 rounded-full mt-8"
-            >
-              <span className="text-gray-500">Explore 3D builder</span>
-              <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
-            </Button>
+          <TabsContent key={i} value={workflow.title}>
+            <div className="text-center mt-8 flex flex-col items-center justify-center lg:max-w-[500px] text-base lg:text-lg">
+              {workflow.description}
+              <Button
+                variant="outline"
+                className="font-semibold px-8 h-[50px] flex items-center justify-center space-x-1 rounded-full mt-8"
+              >
+                <span className="text-gray-500">Explore 3D builder</span>
+                <MoveUpRight
+                  strokeWidth={1}
+                  className="text-gray-500 w-5 h-5"
+                />
+              </Button>
+            </div>
           </TabsContent>
         ))}
       </Tabs>

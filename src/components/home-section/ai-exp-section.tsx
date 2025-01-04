@@ -36,9 +36,12 @@ export default function AIExpSection() {
       <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
         3D+AI is here to reshape the future of fashion design.
       </h3>
-      <div className="grid grid-cols-3 gap-4 mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
         {content.map((c, i) => (
-          <div key={i} className="rounded-lg bg-black-900 p-4 w-[440px]">
+          <div
+            key={i}
+            className="rounded-lg bg-black-900 p-4 w-full lg:w-[440px]"
+          >
             <div className="rounded-lg bg-black-800 h-[300px] w-full flex items-center justify-center">
               <Image
                 src={`/${c.image}`}
