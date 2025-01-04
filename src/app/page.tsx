@@ -54,7 +54,7 @@ export default function Home() {
         </h2>
         <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
           Access the largest library of design templates and downloadable
-          <br />
+          <br className="hidden lg:block" />
           assets, including sewing patterns, 3D files, and more
         </h3>
         <ClothesSection />
@@ -67,15 +67,20 @@ export default function Home() {
         </h2>
         <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
           Seamlessly turn your designs into reality in 6-7 weeks
-          <br /> with our expert manufacturing support
+          <br className="hidden lg:block" /> with our expert manufacturing
+          support
         </h3>
-        <Image
-          className="mt-8"
-          src="/kanban-flow.png"
-          alt="kanban-flow"
-          width={1200}
-          height={500}
-        />
+        <div className="w-full overflow-x-scroll">
+          <div className="w-[1200px] lg:w-full mt-8 flex items-center justify-center">
+            <Image
+              className="mt-8"
+              src="/kanban-flow.png"
+              alt="kanban-flow"
+              width={1200}
+              height={600}
+            />
+          </div>
+        </div>
         <Button
           variant="outline"
           className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
@@ -103,7 +108,7 @@ export default function Home() {
             <MoveRight />
           </span>
         </Button>
-        <div className="border-t-1 custom-dashed-line border-grey my-5 h-[1px] w-[400px]">
+        <div className="border-t-1 custom-dashed-line border-grey my-5 h-[1px] w-[90%] lg:w-[400px]">
           &nbsp;
         </div>
         <h2 className="text-gray-500 text-lg text-center">

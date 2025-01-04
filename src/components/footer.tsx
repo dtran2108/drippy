@@ -7,15 +7,32 @@ export default function Footer() {
   return (
     <footer className="mt-24 mx-8 py-8">
       <hr className="border-black-800 mb-16"></hr>
-      <div className="flex items-center justify-between">
-        <div>
+      <div className="flex flex-wrap items-center justify-between">
+        <div className="hidden lg:block">
           <div className="flex items-center space-x-8">
             <DrippyLogo />
             <h2 className="text-gray-500">Privacy policy</h2>
             <h2 className="text-gray-500">Terms of use</h2>
             <h2 className="text-gray-500">Cookie policy</h2>
           </div>
-          <h2 className="text-gray-500 mt-4">@2024 - Launchmart Inc.</h2>
+          <h2 className="text-gray-500 mt-4 hidden lg:block">
+            @2024 - Launchmart Inc.
+          </h2>
+        </div>
+        <div className="block lg:hidden">
+          <div>
+            <div className='flex items-center'> 
+              <DrippyLogo />
+            </div>
+            <div className="grid grid-cols-2 gap-4 my-6">
+              <h2 className="text-gray-500">Privacy policy</h2>
+              <h2 className="text-gray-500">Terms of use</h2>
+              <h2 className="text-gray-500">Cookie policy</h2>
+            </div>
+          </div>
+          <h2 className="text-gray-500 mt-4 hidden lg:block">
+            @2024 - Launchmart Inc.
+          </h2>
         </div>
         <div>
           <h2 className="text-gray-500 mb-4">Updates right to your Inbox</h2>
@@ -28,6 +45,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <h2 className="text-gray-500 mt-4 block lg:hidden">
+        @2024 - Launchmart Inc.
+      </h2>
     </footer>
   );
 }

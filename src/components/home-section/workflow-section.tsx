@@ -34,7 +34,7 @@ export default function WorkflowSection() {
         defaultValue="Design"
         className="flex flex-col items-center justify-center text-xl"
       >
-        <TabsList className="bg-background">
+        <TabsList className="bg-background flex items-center justify-start flex-wrap h-auto space-y-1">
           {workflows.map((workflow, i) => (
             <TabsTrigger
               key={i}

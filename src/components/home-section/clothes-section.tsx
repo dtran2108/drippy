@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function ClothesSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
+    'data-[state=active]:bg-black-900 data-[state=active]:font-semibold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
   const workflows = [
     {
@@ -67,14 +67,14 @@ export default function ClothesSection() {
               <div className="grid lg:hidden grid-cols-3 gap-4 w-full">
                 <div
                   key={i}
-                  className="w-full h-full bg-black-800 rounded-lg col-span-2 row-span-2"
+                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2"
                 >
                   &nbsp;
                 </div>
                 {[1, 2, 3, 4, 5].map((_, i) => (
                   <div
                     key={i}
-                    className="w-full h-[300px] bg-black-800 rounded-lg"
+                    className="w-full h-[300px] bg-black-900 rounded-lg"
                   >
                     &nbsp;
                   </div>
@@ -83,14 +83,14 @@ export default function ClothesSection() {
               <div className="hidden lg:grid grid-cols-5 gap-4 w-full">
                 <div
                   key={i}
-                  className="w-full h-full bg-black-800 rounded-lg col-span-2 row-span-2"
+                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2"
                 >
                   &nbsp;
                 </div>
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((_, i) => (
                   <div
                     key={i}
-                    className="w-full h-[300px] bg-black-800 rounded-lg"
+                    className="w-full h-[300px] bg-black-900 rounded-lg"
                   >
                     &nbsp;
                   </div>
