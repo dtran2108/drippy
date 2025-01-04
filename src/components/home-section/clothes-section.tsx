@@ -62,34 +62,51 @@ export default function ClothesSection() {
           ))}
         </TabsList>
         {workflows.map((workflow, i) => (
-          <TabsContent
-            key={i}
-            value={workflow.title}
-            className="text-center mt-14 flex flex-col items-center justify-center w-full"
-          >
-            <div className="grid grid-cols-5 gap-4 w-full">
-              <div
-                key={i}
-                className="w-full h-full bg-black-800 rounded-lg col-span-2 row-span-2"
-              >
-                &nbsp;
-              </div>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((_, i) => (
+          <TabsContent key={i} value={workflow.title} className="w-full">
+            <div className="text-center mt-14 flex flex-col items-center justify-center w-full">
+              <div className="grid lg:hidden grid-cols-3 gap-4 w-full">
                 <div
                   key={i}
-                  className="w-full h-[300px] bg-black-800 rounded-lg"
+                  className="w-full h-full bg-black-800 rounded-lg col-span-2 row-span-2"
                 >
                   &nbsp;
                 </div>
-              ))}
+                {[1, 2, 3, 4, 5].map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-full h-[300px] bg-black-800 rounded-lg"
+                  >
+                    &nbsp;
+                  </div>
+                ))}
+              </div>
+              <div className="hidden lg:grid grid-cols-5 gap-4 w-full">
+                <div
+                  key={i}
+                  className="w-full h-full bg-black-800 rounded-lg col-span-2 row-span-2"
+                >
+                  &nbsp;
+                </div>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-full h-[300px] bg-black-800 rounded-lg"
+                  >
+                    &nbsp;
+                  </div>
+                ))}
+              </div>
+              <Button
+                variant="outline"
+                className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+              >
+                <span className="text-gray-500">Browse designs</span>
+                <MoveUpRight
+                  strokeWidth={1}
+                  className="text-gray-500 w-5 h-5"
+                />
+              </Button>
             </div>
-            <Button
-              variant="outline"
-              className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
-            >
-              <span className="text-gray-500">Browse designs</span>
-              <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
-            </Button>
           </TabsContent>
         ))}
       </Tabs>
