@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-8 h-[50px] rounded-full text-xl';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-6 lg:px-8 h-[50px] rounded-full text-md lg:text-xl';
 
   const workflows = [
     {
@@ -19,8 +19,7 @@ export default function WorkflowSection() {
     },
     {
       title: 'Export',
-      description:
-        'Generate production-ready patterns and files in one click',
+      description: 'Generate production-ready patterns and files in one click',
     },
     {
       title: 'Produce',
@@ -33,9 +32,9 @@ export default function WorkflowSection() {
     <>
       <Tabs
         defaultValue="Design"
-        className="w-[500px] flex flex-col items-center justify-center text-xl"
+        className="flex flex-col items-center justify-center text-xl"
       >
-        <TabsList className="bg-bg">
+        <TabsList className="bg-background flex flex-wrap">
           {workflows.map((workflow, i) => (
             <TabsTrigger
               key={i}

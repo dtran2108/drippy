@@ -31,13 +31,13 @@ export default function TechnologyBenefitSection() {
   ];
 
   return (
-    <section className="grid grid-cols-2 gap-16 my-16">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 my-16">
       <div>
         <h1 className="text-5xl font-semibold leading-relaxed">
           Enjoy the full power of
-          <br />
+          <br className="hidden lg:block" />
           <span className="italic font-normal">3D technology</span> —minus{' '}
-          <br /> the complexity.
+          <br className="hidden lg:block" /> the complexity.
         </h1>
         <h2 className="text-gray-500 text-lg mt-4">
           3D design should be a solution, not a burden.
@@ -51,7 +51,7 @@ export default function TechnologyBenefitSection() {
         </Button>
       </div>
       <div>
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {content.slice(0, 2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">
@@ -71,7 +71,7 @@ export default function TechnologyBenefitSection() {
           ))}
         </div>
         <hr className="border-t-1 custom-dashed-line border-[#2A2C31] my-6"></hr>
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {content.slice(2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">

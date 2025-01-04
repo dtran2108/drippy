@@ -5,18 +5,38 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 export default function HeroSection() {
+  const Testimonial = () => (
+    <>
+      <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
+      <h2 className="text-gray-500 text-lg mt-4">
+        “I&apos;d like to say that I&apos;ve done countless research and I
+        <br className="hidden lg:block" /> believe that you are onto something
+        revolutionary!”
+      </h2>
+      <div className="flex items-center space-x-4 mt-4">
+        <Avatar>
+          <AvatarImage src="/avatar/Salalcrossley.png" alt="@Salalcrossley" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        <div>
+          <p className="font-semibold">Founder at Vintage Indentity</p>
+          <p className="text-gray-500">@Salalcrossley</p>
+        </div>
+      </div>
+    </>
+  );
+
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 my-16">
       <div>
         <h1 className="text-5xl font-semibold leading-relaxed">
-          Creating your next <br />
-          collection has
-          <br />
-          <span className="italic font-normal">never been</span> easier.
+          Creating your next <br className="hidden lg:block" />
+          collection has <br className="hidden lg:block" />
+          <span className="italic font-normal"> never been</span> easier.
         </h1>
         <h2 className="text-gray-500 text-lg mt-4">
           Join thousands of fashion entrepreneurs who&apos;ve cut their design
-          time <br /> by 85% while reducing costs
+          time <br className="hidden lg:block" /> by 85% while reducing costs
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
           <span className="font-semibold">Get started now</span>
@@ -26,24 +46,7 @@ export default function HeroSection() {
           </span>
         </Button>
         <div className="hidden lg:block">
-          <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
-          <h2 className="text-gray-500 text-lg mt-4">
-            “I&apos;d like to say that I&apos;ve done countless research and I
-            <br /> believe that you are onto something revolutionary!”
-          </h2>
-          <div className="flex items-center space-x-4 mt-4">
-            <Avatar>
-              <AvatarImage
-                src="/avatar/Salalcrossley.png"
-                alt="@Salalcrossley"
-              />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-            <div>
-              <p className="font-semibold">Founder at Vintage Indentity</p>
-              <p className="text-gray-500">@Salalcrossley</p>
-            </div>
-          </div>
+          <Testimonial />
         </div>
       </div>
       <div className="grid grid-cols-3 gap-2 relative">
@@ -76,21 +79,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="block lg:hidden">
-        <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
-        <h2 className="text-gray-500 text-lg mt-4">
-          “I&apos;d like to say that I&apos;ve done countless research and I
-          believe that you are onto something revolutionary!”
-        </h2>
-        <div className="flex items-center space-x-4 mt-4">
-          <Avatar>
-            <AvatarImage src="/avatar/Salalcrossley.png" alt="@Salalcrossley" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <div>
-            <p className="font-semibold">Founder at Vintage Indentity</p>
-            <p className="text-gray-500">@Salalcrossley</p>
-          </div>
-        </div>
+        <Testimonial />
       </div>
     </section>
   );

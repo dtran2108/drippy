@@ -46,8 +46,8 @@ export default function FAQSection() {
       <div>
         <h1 className="text-5xl font-semibold leading-relaxed">
           Here&apos;s everything
-          <br />
-          <span className="italic font-normal">you</span> need to know.
+          <br className="hidden lg:block" />
+          <span className="italic font-normal"> you</span> need to know.
         </h1>
         <h2 className="text-gray-500 text-lg mt-4">
           Frequently asked questions (FAQs).

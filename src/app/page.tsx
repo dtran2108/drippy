@@ -22,11 +22,13 @@ export default function Home() {
         <h2 className="text-4xl font-semibold text-center leading-relaxed">
           A <span className="italic font-normal">much</span> better way to
           design,
-          <br /> prototype and produce your products.
+          <br className="hidden lg:block" /> prototype and produce your
+          products.
         </h2>
         <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
-          Everything you need to get you from concept to production. <br />A
-          platform made for entrepreneurs, by entrepreneurs.
+          Everything you need to get you from concept to production.{' '}
+          <br className="hidden lg:block" />A platform made for entrepreneurs,
+          by entrepreneurs.
         </h3>
         <Image
           className="mt-8"

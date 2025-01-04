@@ -64,10 +64,10 @@ export default function TestimonialSection() {
         <span className="italic font-normal">us.</span>
       </h2>
       <h3 className="text-gray-500 text-lg mt-4 mb-8 text-center leading-relaxed">
-        Fashion entrepreneurs around the worlds love Drippy for <br /> its
+        Fashion entrepreneurs around the worlds love Drippy for <br className="hidden lg:block" /> its
         flexibility and ease of use.
       </h3>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-24">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 px-0 lg:px-24">
         {testimonials.map((testimonial, index) => (
           <Testimonial key={index} {...testimonial} />
         ))}
