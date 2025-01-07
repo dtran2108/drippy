@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '../ui/button';
 import { MoveUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ClothesSection() {
   const customTabTriggerClass =
@@ -67,32 +68,52 @@ export default function ClothesSection() {
               <div className="grid lg:hidden grid-cols-3 gap-4 w-full">
                 <div
                   key={i}
-                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2"
+                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2 flex items-center justify-center"
                 >
-                  &nbsp;
+                  <Image
+                    src={`/create-dress-1.png`}
+                    width={300}
+                    height={200}
+                    alt="dress"
+                  />
                 </div>
-                {[1, 2, 3, 4, 5].map((_, i) => (
+                {[1, 2, 3, 4, 5].map((dressNo, i) => (
                   <div
                     key={i}
-                    className="w-full h-[300px] bg-black-900 rounded-lg"
+                    className="w-full h-[300px] bg-black-900 rounded-lg flex items-center justify-center"
                   >
-                    &nbsp;
+                    <Image
+                      src={`/create-dress-${dressNo + 1}.png`}
+                      width={200}
+                      height={200}
+                      alt="dress"
+                    />
                   </div>
                 ))}
               </div>
               <div className="hidden lg:grid grid-cols-5 gap-4 w-full">
                 <div
                   key={i}
-                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2"
+                  className="w-full h-full bg-black-900 rounded-lg col-span-2 row-span-2 flex items-center justify-center"
                 >
-                  &nbsp;
+                  <Image
+                    src={`/create-dress-1.png`}
+                    width={300}
+                    height={300}
+                    alt="dress"
+                  />
                 </div>
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((_, i) => (
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((dressNo, i) => (
                   <div
                     key={i}
-                    className="w-full h-[300px] bg-black-900 rounded-lg"
+                    className="w-full h-[300px] bg-black-900 rounded-lg flex items-center justify-center"
                   >
-                    &nbsp;
+                    <Image
+                      src={`/create-dress-${dressNo + 1}.png`}
+                      width={200}
+                      height={200}
+                      alt="dress"
+                    />
                   </div>
                 ))}
               </div>
