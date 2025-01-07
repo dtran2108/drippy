@@ -40,7 +40,7 @@ function Testimonial({
   avatarAlt,
 }: TestimonialProps) {
   return (
-    <div className="p-6 rounded-lg bg-black-900 border border-black-800 w-[380px] h-[270px]">
+    <div className="p-6 rounded-lg bg-black-900 border border-black-800 lg:w-[380px]">
       <p className="text-gray-500">{text}</p>
       <div className="flex items-center space-x-4 mt-4">
         <Avatar>
