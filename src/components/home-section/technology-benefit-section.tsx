@@ -33,7 +33,7 @@ export default function TechnologyBenefitSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 my-16">
       <div>
-        <h1 className="text-5xl font-semibold leading-relaxed">
+        <h1 className="text-5xl font-bold leading-relaxed">
           Enjoy the full power of
           <br className="hidden lg:block" />
           <span className="italic font-normal"> 3D technology</span> —minus{' '}
@@ -44,7 +44,7 @@ export default function TechnologyBenefitSection() {
         </h2>
         <Button
           variant="outline"
-          className="font-semibold p-5 hidden lg:flex items-center justify-center space-x-1 rounded-full mt-4 "
+          className="font-bold p-5 hidden lg:flex items-center justify-center space-x-1 rounded-full mt-4 "
         >
           <span className="text-gray-500">Learn more</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
@@ -63,7 +63,7 @@ export default function TechnologyBenefitSection() {
                     alt="clock-icon"
                   />
                 </div>
-                <h3 className="text-xl font-semibold">{c.title}</h3>
+                <h3 className="text-xl font-bold">{c.title}</h3>
               </div>
 
               <p className="leading-relaxed text-lg">{c.description}</p>
@@ -83,7 +83,7 @@ export default function TechnologyBenefitSection() {
                     alt="clock-icon"
                   />
                 </div>
-                <h3 className="text-xl font-semibold">{c.title}</h3>
+                <h3 className="text-xl font-bold">{c.title}</h3>
               </div>
 
               <p className="leading-relaxed text-lg">{c.description}</p>
@@ -94,7 +94,7 @@ export default function TechnologyBenefitSection() {
       <div className="block lg:hidden">
         <Button
           variant="outline"
-          className="font-semibold p-5 flex items-center justify-center space-x-1 rounded-full mt-4 "
+          className="font-bold p-5 flex items-center justify-center space-x-1 rounded-full mt-4 "
         >
           <span className="text-gray-500">Learn more</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />

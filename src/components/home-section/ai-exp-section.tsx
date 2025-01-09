@@ -29,7 +29,7 @@ export default function AIExpSection() {
 
   return (
     <section className="my-24 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-semibold text-center leading-relaxed">
+      <h2 className="text-4xl font-bold text-center leading-relaxed">
         Enhance <span className="italic font-normal">your experience</span> with
         AI.
       </h2>
@@ -51,7 +51,7 @@ export default function AIExpSection() {
               />
             </div>
             <div className="w-full flex flex-col items-center justify-center">
-              <h3 className="text-lg font-semibold mt-4 text-center flex items-center justify-center">
+              <h3 className="text-lg font-bold mt-4 text-center flex items-center justify-center">
                 {c.title}{' '}
                 <span className="ml-2">
                   <Badge

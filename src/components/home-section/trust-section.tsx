@@ -11,7 +11,7 @@ const TrustSection = () => {
 
   return (
     <section className="my-24 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-semibold mb-8">
+      <h2 className="text-4xl font-bold mb-8">
         They <span className="italic font-normal">trust</span> us
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:flex items-center justify-center space-x-4 mt-4">
@@ -22,7 +22,7 @@ const TrustSection = () => {
             width={50}
             height={50}
           />
-          <span className="text-sm font-semibold">
+          <span className="text-sm font-bold">
             The French
             <br /> ministry of
             <br /> economic.

@@ -1,8 +1,8 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import DrippyLogo from './drippy-logo';
-import { MoveUpRight } from 'lucide-react';
+// import { MoveUpRight } from 'lucide-react';
 import { Button } from './ui/button';
-import DarkModeBtn from './darkmode-btn';
+// import DarkModeBtn from './darkmode-btn';
 import MobileMenu from './mobile-menu';
 
 export default function NavigationBar() {
@@ -11,7 +11,7 @@ export default function NavigationBar() {
       <div className="flex items-center space-x-24">
         <DrippyLogo />
         <div className="text-gray-500 hidden lg:flex items-center space-x-8">
-          <Link href="/">Products</Link>
+          {/* <Link href="/">Products</Link>
           <Link href="/">Marketplace</Link>
           <Link href="/">Pricing</Link>
           <Link href="/" className="flex items-center justify-center space-x-4">
@@ -20,11 +20,11 @@ export default function NavigationBar() {
               strokeWidth={1.5}
               className="ml-1 text-gray-500 w-[10px] h-[10px]"
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="hidden lg:flex items-center space-x-4">
-        <DarkModeBtn />
+        {/* <DarkModeBtn /> */}
         <Button variant="outline" className="font-bold p-5 w-[100px] h-[50px]">
           Login
         </Button>

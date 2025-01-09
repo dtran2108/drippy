@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-semibold px-6 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-bold px-6 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
   const workflows = [
     {
@@ -51,7 +51,7 @@ export default function WorkflowSection() {
               {workflow.description}
               <Button
                 variant="outline"
-                className="font-semibold px-8 h-[50px] flex items-center justify-center space-x-1 rounded-full mt-8"
+                className="font-bold px-8 h-[50px] flex items-center justify-center space-x-1 rounded-full mt-8"
               >
                 <span className="text-gray-500">Explore 3D builder</span>
                 <MoveUpRight

@@ -19,7 +19,7 @@ export default function HeroSection() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div>
-          <p className="font-semibold">Founder at Vintage Indentity</p>
+          <p className="font-bold">Founder at Vintage Indentity</p>
           <p className="text-gray-500">@Salalcrossley</p>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 my-16">
       <div>
-        <h1 className="text-5xl font-semibold leading-relaxed">
+        <h1 className="text-5xl font-bold leading-relaxed">
           Creating your next <br className="hidden lg:block" />
           collection has <br className="hidden lg:block" />
           <span className="italic font-normal"> never been</span> easier.
@@ -39,7 +39,7 @@ export default function HeroSection() {
           time <br className="hidden lg:block" /> by 85% while reducing costs
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
-          <span className="font-semibold">Get started now</span>
+          <span className="font-bold">Get started now</span>
           <span> - It&apos;s FREE</span>
           <span>
             <MoveRight />

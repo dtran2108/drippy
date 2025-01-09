@@ -12,8 +12,8 @@ import {
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
 import DrippyLogo from './drippy-logo';
-import DarkModeBtn from './darkmode-btn';
-import Link from 'next/link';
+// import DarkModeBtn from './darkmode-btn';
+// import Link from 'next/link';
 
 export default function MobileMenu() {
   return (
@@ -32,7 +32,7 @@ export default function MobileMenu() {
           </DrawerClose>
         </DrawerHeader>
         <ul className="flex flex-col items-center text-gray-500 justify-center space-y-8 mt-16">
-          <li>
+          {/* <li>
             <Link href="/">Products</Link>
           </li>
           <li>
@@ -52,10 +52,10 @@ export default function MobileMenu() {
                 className="ml-1 text-gray-500 w-[10px] h-[10px]"
               />
             </Link>
-          </li>
+          </li> */}
         </ul>
         <DrawerFooter className="flex items-center justify-center">
-          <DarkModeBtn />
+          {/* <DarkModeBtn /> */}
           <Button variant="outline" className="font-bold w-full p-5 h-[50px]">
             Login
           </Button>

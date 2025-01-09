@@ -19,7 +19,7 @@ export default function Home() {
       <TrustSection />
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold text-center leading-relaxed">
+        <h2 className="text-4xl font-bold text-center leading-relaxed">
           A <span className="italic font-normal">much</span> better way to
           design,
           <br className="hidden lg:block" /> prototype and produce your
@@ -48,7 +48,7 @@ export default function Home() {
       <AIExpSection />
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold text-center leading-relaxed">
+        <h2 className="text-4xl font-bold text-center leading-relaxed">
           Create everything you can{' '}
           <span className="italic font-normal">imagine.</span>
         </h2>
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       <section className="my-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold text-center leading-relaxed">
+        <h2 className="text-4xl font-bold text-center leading-relaxed">
           And bring your product to life,{' '}
           <span className="italic font-normal">effortlessly.</span>
         </h2>
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
         <Button
           variant="outline"
-          className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+          className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
         >
           <span className="text-gray-500">Learn how it works</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
@@ -95,14 +95,14 @@ export default function Home() {
       <FAQSection />
 
       <section className="mx-4 flex-col rounded-lg bg-black-900 p-[25px] flex items-center justify-center">
-        <h1 className="text-5xl font-semibold leading-relaxed text-center">
+        <h1 className="text-5xl font-bold leading-relaxed text-center">
           Start creating <span className="italic font-normal">today.</span>
         </h1>
         <h2 className="text-gray-500 text-lg mt-4 text-center">
           Generate designs in seconds, not hours.
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
-          <span className="font-semibold">Get started now</span>
+          <span className="font-bold">Get started now</span>
           <span> - It&apos;s FREE</span>
           <span>
             <MoveRight />

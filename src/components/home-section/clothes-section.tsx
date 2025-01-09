@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function ClothesSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-900 data-[state=active]:font-semibold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
+    'data-[state=active]:bg-black-900 data-[state=active]:font-bold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
   const workflows = [
     {
@@ -119,7 +119,7 @@ export default function ClothesSection() {
               </div>
               <Button
                 variant="outline"
-                className="font-semibold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+                className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
               >
                 <span className="text-gray-500">Browse designs</span>
                 <MoveUpRight

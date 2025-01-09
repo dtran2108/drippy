@@ -48,7 +48,7 @@ function Testimonial({
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div>
-          <p className="font-semibold">{name}</p>
+          <p className="font-bold">{name}</p>
           <p className="text-gray-500">{username}</p>
         </div>
       </div>
@@ -59,7 +59,7 @@ function Testimonial({
 export default function TestimonialSection() {
   return (
     <section className="my-24 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-semibold text-center leading-relaxed">
+      <h2 className="text-4xl font-bold text-center leading-relaxed">
         Here&apos;s what they say about{' '}
         <span className="italic font-normal">us.</span>
       </h2>
