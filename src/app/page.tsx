@@ -18,7 +18,7 @@ export default function Home() {
 
       <TrustSection />
 
-      <section className="my-24 flex flex-col items-center justify-center">
+      <section className="mt-24 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold text-center leading-relaxed">
           A <span className="italic font-normal">much</span> better way to
           design,
@@ -39,7 +39,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="my-[20px] flex flex-col items-center justify-center">
+      <section className="my-6 flex flex-col items-center justify-center">
         <WorkflowSection />
       </section>
 

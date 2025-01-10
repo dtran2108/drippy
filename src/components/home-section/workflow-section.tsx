@@ -47,7 +47,7 @@ export default function WorkflowSection() {
         </TabsList>
         {workflows.map((workflow, i) => (
           <TabsContent key={i} value={workflow.title}>
-            <div className="text-center mt-8 flex flex-col items-center justify-center lg:max-w-[500px] text-base lg:text-lg">
+            <div className="text-center mt-[17px] flex flex-col items-center justify-center lg:max-w-[500px] text-base lg:text-lg">
               {workflow.description}
               <Button
                 variant="outline"

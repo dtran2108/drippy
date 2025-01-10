@@ -14,7 +14,7 @@ export default function TechnologyBenefitSection() {
       title: 'Cost',
       icon: 'database.svg',
       description:
-        'Save up to $10,000 per collection. Cut your cost by 50% by eliminating the need for the never-ending samplingloop.',
+        'Save up to $10,000 per collection. Cut your cost by 50% by eliminating the need for the never-ending sampling loop.',
     },
     {
       title: 'Sustainability',
@@ -55,7 +55,7 @@ export default function TechnologyBenefitSection() {
           {content.slice(0, 2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-grey w-[45px] h-[45px] rounded-lg flex items-center justify-center">
+                <div className="bg-black-800 w-[45px] h-[45px] rounded-lg flex items-center justify-center">
                   <Image
                     src={`/icons/${c.icon}`}
                     width={20}
@@ -75,7 +75,7 @@ export default function TechnologyBenefitSection() {
           {content.slice(2).map((c, i) => (
             <div key={i}>
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-grey w-[45px] h-[45px] rounded-lg flex items-center justify-center">
+                <div className="bg-black-800 w-[45px] h-[45px] rounded-lg flex items-center justify-center">
                   <Image
                     src={`/icons/${c.icon}`}
                     width={20}
@@ -96,8 +96,8 @@ export default function TechnologyBenefitSection() {
           variant="outline"
           className="font-bold p-5 flex items-center justify-center space-x-1 rounded-full mt-4 "
         >
-          <span className="text-gray-500">Learn more</span>
-          <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
+          <span className="text-suvaGrey">Learn more</span>
+          <MoveUpRight strokeWidth={1} className="text-suvaGrey w-5 h-5" />
         </Button>
       </div>
     </section>
