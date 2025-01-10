@@ -8,7 +8,7 @@ export default function HeroSection() {
   const Testimonial = () => (
     <>
       <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
-      <h2 className="text-gray-500 text-lg mt-4">
+      <h2 className="text-suvaGrey text-lg mt-4">
         “I&apos;d like to say that I&apos;ve done countless research and I
         <br className="hidden lg:block" /> believe that you are onto something
         revolutionary!”
@@ -20,7 +20,7 @@ export default function HeroSection() {
         </Avatar>
         <div>
           <p className="font-bold">Founder at Vintage Indentity</p>
-          <p className="text-gray-500">@Salalcrossley</p>
+          <p className="text-suvaGrey">@Salalcrossley</p>
         </div>
       </div>
     </>
@@ -29,14 +29,14 @@ export default function HeroSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 my-16">
       <div>
-        <h1 className="text-5xl font-bold leading-relaxed">
+        <h1 className="text-5xl font-bold leading-[70px]">
           Creating your next <br className="hidden lg:block" />
           collection has <br className="hidden lg:block" />
           <span className="italic font-normal"> never been</span> easier.
         </h1>
-        <h2 className="text-gray-500 text-lg mt-4">
-          Join thousands of fashion entrepreneurs who&apos;ve cut their design
-          time <br className="hidden lg:block" /> by 85% while reducing costs
+        <h2 className="text-suvaGrey text-lg mt-4">
+          Join thousands of fashion entrepreneurs who&apos;ve cut <br className="hidden lg:block" /> their design
+          time by 85% while reducing costs
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
           <span className="font-bold">Get started now</span>

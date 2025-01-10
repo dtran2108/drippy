@@ -55,7 +55,7 @@ export default function FAQSection() {
           <br className="hidden lg:block" />
           <span className="italic font-normal"> you</span> need to know.
         </h1>
-        <h2 className="text-gray-500 text-lg mt-4">
+        <h2 className="text-suvaGrey text-lg mt-4">
           Frequently asked questions (FAQs).
         </h2>
       </div>
@@ -67,7 +67,7 @@ export default function FAQSection() {
               value={`item-${i}`}
               className="border-none my-4 rounded-lg px-4 py-2 bg-black-900"
             >
-              <AccordionTrigger className="text-gray-500 text-lg ">
+              <AccordionTrigger className="text-suvaGrey text-lg ">
                 {i + 1}. {q.question}
               </AccordionTrigger>
               <AccordionContent>{q.answer}</AccordionContent>

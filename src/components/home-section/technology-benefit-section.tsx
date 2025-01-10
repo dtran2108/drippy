@@ -39,7 +39,7 @@ export default function TechnologyBenefitSection() {
           <span className="italic font-normal"> 3D technology</span> —minus{' '}
           <br className="hidden lg:block" /> the complexity.
         </h1>
-        <h2 className="text-gray-500 text-lg mt-4">
+        <h2 className="text-suvaGrey text-lg mt-4">
           3D design should be a solution, not a burden.
         </h2>
         <Button

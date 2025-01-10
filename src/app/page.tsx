@@ -25,7 +25,7 @@ export default function Home() {
           <br className="hidden lg:block" /> prototype and produce your
           products.
         </h2>
-        <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
+        <h3 className="text-suvaGrey text-lg mt-4 text-center leading-relaxed">
           Everything you need to get you from concept to production.{' '}
           <br className="hidden lg:block" />A platform made for entrepreneurs,
           by entrepreneurs.
@@ -52,7 +52,7 @@ export default function Home() {
           Create everything you can{' '}
           <span className="italic font-normal">imagine.</span>
         </h2>
-        <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
+        <h3 className="text-suvaGrey text-lg mt-4 text-center leading-relaxed">
           Access the largest library of design templates and downloadable
           <br className="hidden lg:block" />
           assets, including sewing patterns, 3D files, and more
@@ -65,7 +65,7 @@ export default function Home() {
           And bring your product to life,{' '}
           <span className="italic font-normal">effortlessly.</span>
         </h2>
-        <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
+        <h3 className="text-suvaGrey text-lg mt-4 text-center leading-relaxed">
           Seamlessly turn your designs into reality in 6-7 weeks
           <br className="hidden lg:block" /> with our expert manufacturing
           support
@@ -85,8 +85,8 @@ export default function Home() {
           variant="outline"
           className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
         >
-          <span className="text-gray-500">Learn how it works</span>
-          <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
+          <span className="text-suvaGrey">Learn how it works</span>
+          <MoveUpRight strokeWidth={1} className="text-suvaGrey w-5 h-5" />
         </Button>
       </section>
 
@@ -98,7 +98,7 @@ export default function Home() {
         <h1 className="text-5xl font-bold leading-relaxed text-center">
           Start creating <span className="italic font-normal">today.</span>
         </h1>
-        <h2 className="text-gray-500 text-lg mt-4 text-center">
+        <h2 className="text-suvaGrey text-lg mt-4 text-center">
           Generate designs in seconds, not hours.
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="border-t-1 custom-dashed-line border-grey my-5 h-[1px] w-[90%] lg:w-[400px]">
           &nbsp;
         </div>
-        <h2 className="text-gray-500 text-lg text-center">
+        <h2 className="text-suvaGrey text-lg text-center">
           And join our communities:
         </h2>
         <div className="flex items-center space-x-4 mt-4">

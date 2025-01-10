@@ -33,7 +33,7 @@ export default function AIExpSection() {
         Enhance <span className="italic font-normal">your experience</span> with
         AI.
       </h2>
-      <h3 className="text-gray-500 text-lg mt-4 text-center leading-relaxed">
+      <h3 className="text-suvaGrey text-lg mt-4 text-center leading-relaxed">
         3D+AI is here to reshape the future of fashion design.
       </h3>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">

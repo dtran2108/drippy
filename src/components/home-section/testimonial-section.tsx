@@ -41,7 +41,7 @@ function Testimonial({
 }: TestimonialProps) {
   return (
     <div className="p-6 rounded-lg bg-black-900 border border-black-800 lg:w-[380px]">
-      <p className="text-gray-500">{text}</p>
+      <p className="text-suvaGrey">{text}</p>
       <div className="flex items-center space-x-4 mt-4">
         <Avatar>
           <AvatarImage src={avatarSrc} alt={avatarAlt} />
@@ -49,7 +49,7 @@ function Testimonial({
         </Avatar>
         <div>
           <p className="font-bold">{name}</p>
-          <p className="text-gray-500">{username}</p>
+          <p className="text-suvaGrey">{username}</p>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@ export default function TestimonialSection() {
         Here&apos;s what they say about{' '}
         <span className="italic font-normal">us.</span>
       </h2>
-      <h3 className="text-gray-500 text-lg mt-4 mb-8 text-center leading-relaxed">
+      <h3 className="text-suvaGrey text-lg mt-4 mb-8 text-center leading-relaxed">
         Fashion entrepreneurs around the worlds love Drippy for <br className="hidden lg:block" /> its
         flexibility and ease of use.
       </h3>
