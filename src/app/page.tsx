@@ -13,7 +13,7 @@ import HeroSection from '@/components/home-section/hero-section';
 
 export default function Home() {
   return (
-    <main className="py-16 px-8">
+    <main className="py-16 px-[15px] lg:px-8">
       <HeroSection />
 
       <TrustSection />
