@@ -35,8 +35,9 @@ export default function HeroSection() {
           <span className="italic font-normal"> never been</span> easier.
         </h1>
         <h2 className="text-suvaGrey text-lg mt-4">
-          Join thousands of fashion entrepreneurs who&apos;ve cut <br className="hidden lg:block" /> their design
-          time by 85% while reducing costs
+          Join thousands of fashion entrepreneurs who&apos;ve cut{' '}
+          <br className="hidden lg:block" /> their design time by 85% while
+          reducing costs
         </h2>
         <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
           <span className="font-bold">Get started now</span>
@@ -74,7 +75,7 @@ export default function HeroSection() {
             />
           </div>
         ))}
-        <div className="absolute bottom-0 h-[150px] bg-[#000] w-full opacity-60 blur-2xl">
+        <div className="absolute -bottom-8 h-[250px] bg-gradient-to-b from-[rgba(255,255,255,0.01)] to-background w-full">
           &nbsp;
         </div>
       </div>
