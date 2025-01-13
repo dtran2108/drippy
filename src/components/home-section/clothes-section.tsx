@@ -64,7 +64,7 @@ export default function ClothesSection() {
         </TabsList>
         {workflows.map((workflow, i) => (
           <TabsContent key={i} value={workflow.title} className="w-full">
-            <div className="text-center mt-14 flex flex-col items-center justify-center w-full">
+            <div className="text-center mt-6 lg:mt-14 flex flex-col items-center justify-center w-full">
               <div className="grid lg:hidden grid-cols-3 gap-4 w-full">
                 <div
                   key={i}

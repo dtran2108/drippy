@@ -14,7 +14,7 @@ const TrustSection = () => {
       <h2 className="text-4xl font-bold mb-8">
         They <span className="italic font-normal">trust</span> us
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:flex items-center justify-center space-x-4 mt-4">
+      <div className="grid grid-cols-2 gap-4 lg:flex items-center justify-center space-x-4 mt-4">
         <div className="w-[180px] h-[100px] bg-black-900 rounded-lg flex items-center justify-center ml-4 space-x-0 lg:space-x-2">
           <Image
             src={`/logos/french-ministry-of-economics.png`}

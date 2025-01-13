@@ -16,6 +16,7 @@ export default {
         },
         grey: '#2A2C31',
         suvaGrey: '#99999A',
+        scarabaeusSacer: '#424347',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

@@ -19,7 +19,7 @@ export default function Home() {
       <TrustSection />
 
       <section className="mt-24 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center leading-relaxed">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center leading-relaxed">
           A <span className="italic font-normal">much</span> better way to
           design,
           <br className="hidden lg:block" /> prototype and produce your
@@ -70,7 +70,16 @@ export default function Home() {
           <br className="hidden lg:block" /> with our expert manufacturing
           support
         </h3>
-        <div className="w-full overflow-x-scroll">
+        <div
+          className="w-full overflow-x-scroll [&::-webkit-scrollbar]:h-[10px]
+                    lg:[&::-webkit-scrollbar]:h-0
+                    [&::-webkit-scrollbar-track]:rounded-full
+                    [&::-webkit-scrollbar-track]:bg-black-900
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-scarabaeusSacer
+                    dark:[&::-webkit-scrollbar-track]:bg-black-900
+                    dark:[&::-webkit-scrollbar-thumb]:bg-scarabaeusSacer"
+        >
           <div className="w-[1200px] lg:w-full mt-8 flex items-center justify-center">
             <Image
               className="mt-8"

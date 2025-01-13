@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function WorkflowSection() {
   const customTabTriggerClass =
-    'data-[state=active]:bg-black-800 data-[state=active]:font-bold px-6 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
+    'data-[state=active]:bg-black-800 data-[state=active]:font-bold px-5 lg:px-8 h-[50px] rounded-full text-sm lg:text-lg';
 
   const workflows = [
     {

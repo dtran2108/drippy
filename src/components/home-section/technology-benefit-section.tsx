@@ -33,7 +33,7 @@ export default function TechnologyBenefitSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 my-16">
       <div>
-        <h1 className="text-5xl font-bold leading-relaxed">
+        <h1 className="text-3xl lg:text-5xl font-bold leading-relaxed">
           Enjoy the full power of
           <br className="hidden lg:block" />
           <span className="italic font-normal"> 3D technology</span> —minus{' '}

@@ -7,7 +7,7 @@ import MobileMenu from './mobile-menu';
 
 export default function NavigationBar() {
   return (
-    <div className="fixed bg-background top-0 flex items-center justify-between w-screen py-4 px-[15px] lg:px-8 font-[family-name:var(--font-poppins)] z-50">
+    <div className="fixed bg-background top-0 flex items-center justify-between w-screen py-4 px-4 lg:px-8 font-[family-name:var(--font-poppins)] z-50">
       <div className="flex items-center space-x-24">
         <DrippyLogo />
         <div className="text-gray-500 hidden lg:flex items-center space-x-8">

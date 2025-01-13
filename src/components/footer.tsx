@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 
 export default function Footer() {
   return (
-    <footer className="mt-24 mx-8 py-8">
+    <footer className="mt-6 lg:mt-24 mx-4 lg:mx-8 py-8">
       <hr className="border-black-800 mb-16"></hr>
       <div className="flex flex-wrap items-center justify-between">
         <div className="hidden lg:block">
@@ -24,7 +24,7 @@ export default function Footer() {
             <div className='flex items-center'> 
               <DrippyLogo />
             </div>
-            <div className="grid grid-cols-2 gap-4 my-6">
+            <div className="flex items-center space-x-4 my-6">
               <h2 className="text-suvaGrey">Privacy policy</h2>
               <h2 className="text-suvaGrey">Terms of use</h2>
               <h2 className="text-suvaGrey">Cookie policy</h2>
