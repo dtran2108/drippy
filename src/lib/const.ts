@@ -1,1 +1,0 @@
-export const GOOGLE_ANALYTICS_ID = 'G-QPQ8J5JLVT';

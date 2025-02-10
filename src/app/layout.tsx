@@ -3,7 +3,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import NavigationBar from '@/components/navigation-bar';
 import Script from 'next/script';
-import { GOOGLE_ANALYTICS_ID } from '@/lib/const';
+import GoogleAnalytics from '@/components/google-analytics';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -23,17 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <Script
-        id="next"
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
-      ></Script>
-      <Script id="next">
-        {`window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${GOOGLE_ANALYTICS_ID}');`}
-      </Script>
+      <GoogleAnalytics />
       <body className={`${poppins.variable} antialiased`}>
         <NavigationBar />
         {children}
