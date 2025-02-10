@@ -22,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <GoogleAnalytics />
       <body className={`${poppins.variable} antialiased`}>
+        <GoogleAnalytics />
         <NavigationBar />
         {children}
       </body>
