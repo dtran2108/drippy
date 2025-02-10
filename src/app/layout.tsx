@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import NavigationBar from '@/components/navigation-bar';
-import Script from 'next/script';
 import GoogleAnalytics from '@/components/google-analytics';
 
 const poppins = Poppins({
