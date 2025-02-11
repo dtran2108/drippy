@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import NavigationBar from '@/components/navigation-bar';
-import GoogleAnalytics from '@/components/google-analytics';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${poppins.variable} antialiased`}>
-        <GoogleAnalytics />
         <NavigationBar />
         {children}
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID || ''} />
       </body>
     </html>
   );
