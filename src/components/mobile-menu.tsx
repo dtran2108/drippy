@@ -12,10 +12,14 @@ import {
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
 import DrippyLogo from './drippy-logo';
+import { useRouter } from 'next/navigation';
+import { APP_PATH } from '@/lib/const';
 // import DarkModeBtn from './darkmode-btn';
 // import Link from 'next/link';
 
 export default function MobileMenu() {
+  const router = useRouter();
+
   return (
     <Drawer direction="right">
       <DrawerTrigger>
@@ -56,10 +60,19 @@ export default function MobileMenu() {
         </ul>
         <DrawerFooter className="flex items-center justify-center">
           {/* <DarkModeBtn /> */}
-          <Button variant="outline" className="font-bold w-full p-5 h-[50px]">
+          <Button
+            variant="outline"
+            className="font-bold w-full p-5 h-[50px]"
+            onClick={() => router.replace(APP_PATH)}
+          >
             Login
           </Button>
-          <Button className="font-bold p-5 h-[50px] w-full">Get Started</Button>
+          <Button
+            className="font-bold p-5 h-[50px] w-full"
+            onClick={() => router.replace(APP_PATH)}
+          >
+            Get Started
+          </Button>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
