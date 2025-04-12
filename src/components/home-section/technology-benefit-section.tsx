@@ -1,8 +1,13 @@
+'use client';
+
 import { Button } from '../ui/button';
 import Image from 'next/image';
 import { MoveUpRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { APP_PATH } from '@/lib/const';
 
 export default function TechnologyBenefitSection() {
+  const router = useRouter();
   const content = [
     {
       title: 'Speed',
@@ -44,7 +49,8 @@ export default function TechnologyBenefitSection() {
         </h2>
         <Button
           variant="outline"
-          className="font-bold p-5 hidden lg:flex items-center justify-center space-x-1 rounded-full mt-4 "
+          className="font-bold p-5 hidden lg:flex items-center justify-center space-x-1 rounded-full mt-4"
+          onClick={() => router.replace(APP_PATH)}
         >
           <span className="text-gray-500">Learn more</span>
           <MoveUpRight strokeWidth={1} className="text-gray-500 w-5 h-5" />
@@ -94,7 +100,8 @@ export default function TechnologyBenefitSection() {
       <div className="block lg:hidden">
         <Button
           variant="outline"
-          className="font-bold p-5 flex items-center justify-center space-x-1 rounded-full mt-4 "
+          className="font-bold p-5 flex items-center justify-center space-x-1 rounded-full mt-4"
+          onClick={() => router.replace(APP_PATH)}
         >
           <span className="text-suvaGrey">Learn more</span>
           <MoveUpRight strokeWidth={1} className="text-suvaGrey w-5 h-5" />
