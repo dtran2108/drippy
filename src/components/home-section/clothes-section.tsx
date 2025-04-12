@@ -1,9 +1,14 @@
+'use client';
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '../ui/button';
 import { MoveUpRight } from 'lucide-react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { APP_PATH } from '@/lib/const';
 
 export default function ClothesSection() {
+  const router = useRouter();
   const customTabTriggerClass =
     'data-[state=active]:bg-black-900 data-[state=active]:font-bold px-4 lg:px-8 h-[50px] rounded-full text-base lg:text-lg';
 
@@ -119,7 +124,8 @@ export default function ClothesSection() {
               </div>
               <Button
                 variant="outline"
-                className="font-bold p-5  flex items-center justify-center space-x-1 rounded-full mt-8"
+                className="font-bold p-5 flex items-center justify-center space-x-1 rounded-full mt-8"
+                onClick={() => router.replace(APP_PATH)}
               >
                 <span className="text-gray-500">Browse designs</span>
                 <MoveUpRight

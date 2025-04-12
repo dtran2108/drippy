@@ -1,10 +1,16 @@
+'use client';
+
 import { MoveRight } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
+import { APP_PATH } from '@/lib/const';
 
 export default function HeroSection() {
+  const router = useRouter();
+
   const Testimonial = () => (
     <>
       <hr className="border-t-1 custom-dashed-line border-gray-700 my-6"></hr>
@@ -39,7 +45,10 @@ export default function HeroSection() {
           <br className="hidden lg:block" /> their design time by 85% while
           reducing costs
         </h2>
-        <Button className="flex items-center space-x-1 mt-4 p-5 h-[50px]">
+        <Button
+          className="flex items-center space-x-1 mt-4 p-5 h-[50px]"
+          onClick={() => router.replace(APP_PATH)}
+        >
           <span className="font-bold">Get started now</span>
           <span> - It&apos;s FREE</span>
           <span>
